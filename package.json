@@ -29,6 +29,6 @@
         "latheesan",
         "kanesamoorthy"
     ],
-    "repository": "git://github.com/latheesan-k/magento-api-xmlrpc.git",
+    "repository": "git://github.com/latheesan-k/magento-api-xmlrpc-extended.git",
     "license": "MIT"
 }

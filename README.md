@@ -6,8 +6,6 @@ This wrapper lets you talk to Magento via SOAP. This is the most reliable and up
 
 Original wrapper: bitbucket.org/icecom/magentoapi , developed by https://www.npmjs.com/~icecom and https://www.npmjs.com/~2ps. 
 
-This copy exists so I can rapidly fix any bugs I run into.
-
 ## Installation
 
 `npm i -S magento-api-xmlrpc-extended`
@@ -15,22 +13,28 @@ This copy exists so I can rapidly fix any bugs I run into.
 ## Usage
 
 ```js
-var MagentoAPI = require('magento-api');
-var magento = new MagentoAPI({
-  host: 'your.host',
-  port: 80,
-  path: '/api/xmlrpc/',
-  login: 'your_username',
-  pass: 'your_pass'
+const MagentoAPI = require('magento-api-xmlrpc-extended');
+
+const magentoAPI = new MagentoAPI({
+    host: 'shop-domain.com',
+    port: 80,
+    path: '/api/xmlrpc/',
+    login: 'api_username',
+    pass: 'api_password'
 });
 
-magento.login(function(err, sessId) {
-  if (err) {
-    // deal with error
-    return;
-  }
+magentoAPI.login((error, sessionId) =>
+{
+    // Error
+    if (err) {
+        console.log('error', error);
+        return;
+    }
 
-  // use magento
+    // Test
+    console.log('sessionId', sessionId);
+
+    // Rest of your code...
 });
 ```
 
