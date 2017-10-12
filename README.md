@@ -10,7 +10,7 @@ This copy exists so I can rapidly fix any bugs I run into.
 
 ## Installation
 
-`npm install git+ssh://git@github.com/wolakec/magento-api-xmlrpc.git`
+`npm i -S magento-api-xmlrpc-extended`
 
 ## Usage
 
