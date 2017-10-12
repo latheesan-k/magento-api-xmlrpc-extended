@@ -26,7 +26,7 @@ const magentoAPI = new MagentoAPI({
 magentoAPI.login((error, sessionId) =>
 {
     // Error
-    if (err) {
+    if (error) {
         console.log('error', error);
         return;
     }
