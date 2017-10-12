@@ -1,28 +1,34 @@
 {
-  "name": "magento-api-xmlrpc",
-  "author": "Wol Akec <wolakec@live.com>",
-  "description": "Magento XMLRPC wrapper for Node.js. This is the most reliable and up to date wrapper, including bug fixes.",
-  "version": "0.7.0",
-  "main": "./src/magento",
-  "contributors": [
-    {
-      "name": "Wol Akec",
-      "email": "wolakec@live.com"
-    }
-  ],
-  "engines": {
-    "node": ">=0.10.20"
-  },
-  "dependencies": {
-    "request": "2.81.0",
-    "xmlrpc": "1.3.2"
-  },
-  "keywords": [
-    "magento",
-    "api",
-    "xml",
-    "xml-rpc"
-  ],
-  "repository": "git://github.com/wolakec/magento-api-xmlrpc.git",
-  "license": "MIT"
+    "name": "magento-api-xmlrpc",
+    "author": "Latheesan Kanesamoorthy <latheesan_k@hotmail.com>",
+    "description": "Magento XMLRPC wrapper for Node.js. This is the most reliable and up to date wrapper, including bug fixes.",
+    "version": "1.0.0",
+    "main": "./src/magento",
+    "contributors": [
+        {
+            "name": "Latheesan Kanesamoorthy",
+            "email": "wolakec@live.com"
+        },
+        {
+            "name": "Wol Akec",
+            "email": "wolakec@live.com"
+        }
+    ],
+    "engines": {
+        "node": ">=0.10.20"
+    },
+    "dependencies": {
+        "request": "2.81.0",
+        "xmlrpc": "1.3.2"
+    },
+    "keywords": [
+        "magento",
+        "api",
+        "xml",
+        "xml-rpc",
+        "latheesan",
+        "kanesamoorthy"
+    ],
+    "repository": "git://github.com/latheesan-k/magento-api-xmlrpc.git",
+    "license": "MIT"
 }
