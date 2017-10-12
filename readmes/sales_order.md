@@ -5,7 +5,7 @@
 Allows you to add a new comment to the order.
 
 ```js
-magento.salesOrder.addComment({
+magentoAPI.salesOrder.addComment({
   orderIncrementId: val,
   status:           val,
   comment:          val,  /* optional */
@@ -18,7 +18,7 @@ magento.salesOrder.addComment({
 Allows you to cancel the required order.
 
 ```js
-magento.salesOrder.cancel({
+magentoAPI.salesOrder.cancel({
   orderIncrementId: val
 }, callback);
 ```
@@ -28,7 +28,7 @@ magento.salesOrder.cancel({
 Allows you to place the required order on hold.
 
 ```js
-magento.salesOrder.hold({
+magentoAPI.salesOrder.hold({
   orderIncrementId: val
 }, callback);
 ```
@@ -38,7 +38,7 @@ magento.salesOrder.hold({
 Allows you to retrieve the required order information.
 
 ```js
-magento.salesOrder.info({
+magentoAPI.salesOrder.info({
   orderIncrementId: val
 }, callback);
 ```
@@ -48,11 +48,11 @@ magento.salesOrder.info({
 Allows you to retrieve the list of orders. Additional filters can be applied.
 
 ```js
-magento.salesOrder.list(callback);
+magentoAPI.salesOrder.list(callback);
 
 // or 
 
-magento.salesOrder.list({
+magentoAPI.salesOrder.list({
   filters: { key: 'val' }
 }, callback);
 ```
@@ -62,7 +62,7 @@ magento.salesOrder.list({
 Allows you to unhold the required order.
 
 ```js
-magento.salesOrder.unhold({
+magentoAPI.salesOrder.unhold({
   orderIncrementId: val
 }, callback);
 ```

@@ -7,7 +7,7 @@ Allows you to upload a new product image.
 `data` is a catalogProductAttributeMediaCreateEntity object.
 
 ```js
-magento.catalogProductAttributeMedia.create({
+magentoAPI.catalogProductAttributeMedia.create({
   product:    val,
   data:       val,
   storeView:  val   /* optional */
@@ -19,11 +19,11 @@ magento.catalogProductAttributeMedia.create({
 Allows you to set/get the current store view.
 
 ```js
-magento.catalogProductAttributeMedia.currentStore(callback);
+magentoAPI.catalogProductAttributeMedia.currentStore(callback);
 
 // or
 
-magento.catalogProductAttributeMedia.currentStore({
+magentoAPI.catalogProductAttributeMedia.currentStore({
   storeView: val    /* optional */
 }, callback);
 ```
@@ -33,7 +33,7 @@ magento.catalogProductAttributeMedia.currentStore({
 Allows you to retrieve information about the specified product image.
 
 ```js
-magento.catalogProductAttributeMedia.info({
+magentoAPI.catalogProductAttributeMedia.info({
   info:       val,
   file:       val,
   storeView:  val   /* optional */
@@ -45,7 +45,7 @@ magento.catalogProductAttributeMedia.info({
 Allows you to retrieve the list of product images.
 
 ```js
-magento.catalogProductAttributeMedia.list({
+magentoAPI.catalogProductAttributeMedia.list({
   product:    val,
   storeView:  val   /* optional */
 }, callback);
@@ -56,7 +56,7 @@ magento.catalogProductAttributeMedia.list({
 Allows you to remove the image from a product.
 
 ```js
-magento.catalogProductAttributeMedia.remove({
+magentoAPI.catalogProductAttributeMedia.remove({
   product:  val,
   file:     val
 }, callback);
@@ -70,7 +70,7 @@ Note that if the product attribute set contains attributes of the Media Image ty
 it will also be returned in the response.
 
 ```js
-magento.catalogProductAttributeMedia.types({
+magentoAPI.catalogProductAttributeMedia.types({
   setId: val
 }, callback);
 ```
@@ -80,7 +80,7 @@ magento.catalogProductAttributeMedia.types({
 Allows you to update the product image.
 
 ```js
-magento.catalogProductAttributeMedia.update({
+magentoAPI.catalogProductAttributeMedia.update({
   product:    val,
   file:       val,
   data:       val,

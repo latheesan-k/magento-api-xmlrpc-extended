@@ -7,7 +7,7 @@ Allows you to add one or more products to the shopping cart (quote).
 `products` is an array of shoppingCartProductEntity objects.
 
 ```js
-magento.checkoutCartProduct.add({
+magentoAPI.checkoutCartProduct.add({
   quoteId:    val,
   products:   [ val, val, val ],
   storeView:  val  /* optional */
@@ -15,7 +15,7 @@ magento.checkoutCartProduct.add({
 
 // or a single product
 
-magento.checkoutCartProduct.add({
+magentoAPI.checkoutCartProduct.add({
   quoteId:    val,
   products:   val,
   storeView:  val  /* optional */
@@ -27,7 +27,7 @@ magento.checkoutCartProduct.add({
 Allows you to retrieve the list of products in the shopping cart (quote).
 
 ```js
-magento.checkoutCartProduct.list({
+magentoAPI.checkoutCartProduct.list({
   quoteId:    val,
   storeView:  val  /* optional */
 }, callback);
@@ -40,7 +40,7 @@ Allows you to move products from the current quote to a customer quote.
 `productsData` is an array of shoppingCartProductEntity objects.
 
 ```js
-magento.checkoutCartProduct.moveToCustomerQuote({
+magentoAPI.checkoutCartProduct.moveToCustomerQuote({
   quoteId:      val,
   productsData: [ val, val, val ],
   storeView:    val  /* optional */
@@ -48,7 +48,7 @@ magento.checkoutCartProduct.moveToCustomerQuote({
 
 // or a single product data cell
 
-magento.checkoutCartProduct.moveToCustomerQuote({
+magentoAPI.checkoutCartProduct.moveToCustomerQuote({
   quoteId:      val,
   productsData: val,
   storeView:    val  /* optional */
@@ -62,7 +62,7 @@ Allows you to remove one or several products from a shopping cart (quote).
 `productsData` is an array of shoppingCartProductEntity objects.
 
 ```js
-magento.checkoutCartProduct.remove({
+magentoAPI.checkoutCartProduct.remove({
   quoteId:      val,
   productsData: [ val, val, val ],
   storeView:    val  /* optional */
@@ -70,7 +70,7 @@ magento.checkoutCartProduct.remove({
 
 // or a single product data cell
 
-magento.checkoutCartProduct.remove({
+magentoAPI.checkoutCartProduct.remove({
   quoteId:      val,
   productsData: val,
   storeView:    val  /* optional */
@@ -84,7 +84,7 @@ Allows you to update one or several products in the shopping cart (quote).
 `productsData` is an array of shoppingCartProductEntity objects.
 
 ```js
-magento.checkoutCartProduct.update({
+magentoAPI.checkoutCartProduct.update({
   quoteId:      val,
   productsData: [ val, val, val ],
   storeView:    val  /* optional */
@@ -92,7 +92,7 @@ magento.checkoutCartProduct.update({
 
 // or a single product data cell
 
-magento.checkoutCartProduct.update({
+magentoAPI.checkoutCartProduct.update({
   quoteId:      val,
   productsData: val,
   storeView:    val  /* optional */

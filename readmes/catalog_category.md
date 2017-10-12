@@ -5,7 +5,7 @@
 Retrieve the list of products assigned to a required category.
 
 ```js
-magento.catalogCategory.assignedProducts({
+magentoAPI.catalogCategory.assignedProducts({
   categoryId: val
 }, callback);
 ```
@@ -15,7 +15,7 @@ magento.catalogCategory.assignedProducts({
 Create a new category and return its ID.
 
 ```js
-magento.catalogCategory.assignProduct({
+magentoAPI.catalogCategory.assignProduct({
   categoryId: val,
   product:    val,
   position:   val   /* optional */
@@ -29,7 +29,7 @@ Create a new category and return its ID.
 `data` is a catalogCategoryEntityCreate object.
 
 ```js
-magento.catalogCategory.create({
+magentoAPI.catalogCategory.create({
   categoryId: val,
   data:       val,
   storeView:  val   /* optional */
@@ -41,7 +41,7 @@ magento.catalogCategory.create({
 Allows you to set/get the current store view.
 
 ```js
-magento.catalogCategory.currentStore({
+magentoAPI.catalogCategory.currentStore({
   storeView: val
 }, callback);
 ```
@@ -51,7 +51,7 @@ magento.catalogCategory.currentStore({
 Allows you to delete the required category.
 
 ```js
-magento.catalogCategory.delete({
+magentoAPI.catalogCategory.delete({
   categoryId: val
 }, callback);
 ```
@@ -61,7 +61,7 @@ magento.catalogCategory.delete({
 Allows you to retrieve information about the required category.
 
 ```js
-magento.catalogCategory.info({
+magentoAPI.catalogCategory.info({
   categoryId: val,
   storeView:  val,  /* optional */
   attributes: val   /* optional */
@@ -73,11 +73,11 @@ magento.catalogCategory.info({
 Allows you to retrieve one level of categories by a website, a store view, or a parent category.
 
 ```js
-magento.catalogCategory.level(callback);
+magentoAPI.catalogCategory.level(callback);
 
 // or
 
-magento.catalogCategory.level({
+magentoAPI.catalogCategory.level({
   website:        val,  /* optional */
   storeView:      val,  /* optional */
   parentCategory: val   /* optional */
@@ -89,7 +89,7 @@ magento.catalogCategory.level({
 Allows you to move the required category in the category tree.
 
 ```js
-magento.catalogCategory.move({
+magentoAPI.catalogCategory.move({
   categoryId: val,
   parentId:   val,
   afterId:    val   /* optional */
@@ -101,7 +101,7 @@ magento.catalogCategory.move({
 Allows you to remove the product assignment from the category.
 
 ```js
-magento.catalogCategory.removeProduct({
+magentoAPI.catalogCategory.removeProduct({
   categoryId: val,
   productId:   val
 }, callback);
@@ -112,11 +112,11 @@ magento.catalogCategory.removeProduct({
 Allows you to retrieve the hierarchical tree of categories.
 
 ```js
-magento.catalogCategory.tree(callback);
+magentoAPI.catalogCategory.tree(callback);
 
 // or
 
-magento.catalogCategory.tree({
+magentoAPI.catalogCategory.tree({
   parentId:   val,  /* optional */
   storeView:  val  /* optional */
 }, callback);
@@ -127,7 +127,7 @@ magento.catalogCategory.tree({
 Update the required category. Note that you should specify only those parameters which you want to be updated.
 
 ```js
-magento.catalogCategory.update({
+magentoAPI.catalogCategory.update({
   categoryId:   val,
   categoryData: val,
   storeView:    val   /* optional */
@@ -139,7 +139,7 @@ magento.catalogCategory.update({
 Allows you to update the product assigned to a category. The product position is updated.
 
 ```js
-magento.catalogCategory.updateProduct({
+magentoAPI.catalogCategory.updateProduct({
   categoryId: val,
   productId:  val,
   position:   val   /* optional */

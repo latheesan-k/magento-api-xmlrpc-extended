@@ -5,7 +5,7 @@
 Allows you to add a new comment to an existing credit memo. Email notification can be sent to the user email.
 
 ```js
-magento.salesOrderCreditMemo.addComment({
+magentoAPI.salesOrderCreditMemo.addComment({
   creditmemoIncrementId:  val,
   comment:                val,  /* optional */
   notifyCustomer:         val,  /* optional */
@@ -18,7 +18,7 @@ magento.salesOrderCreditMemo.addComment({
 Allows you to cancel an existing credit memo.
 
 ```js
-magento.salesOrderCreditMemo.cancel({
+magentoAPI.salesOrderCreditMemo.cancel({
   creditmemoIncrementId: val
 }, callback);
 ```
@@ -30,7 +30,7 @@ Allows you to create a new credit memo for the invoiced order.
 Comments can be added and an email notification can be sent to the user email.
 
 ```js
-magento.salesOrderCreditMemo.create({
+magentoAPI.salesOrderCreditMemo.create({
   orderIncrementId:           val,
   creditmemoData:             val,  /* optional */
   comment:                    val,  /* optional */
@@ -45,7 +45,7 @@ magento.salesOrderCreditMemo.create({
 Allows you to retrieve full information about the specified credit memo.
 
 ```js
-magento.salesOrderCreditMemo.info({
+magentoAPI.salesOrderCreditMemo.info({
   creditmemoIncrementId: val
 }, callback);
 ```
@@ -55,17 +55,17 @@ magento.salesOrderCreditMemo.info({
 Allows you to retrieve the list of orders. Additional filters can be applied.
 
 ```js
-magento.salesOrderCreditMemo.list(callback);
+magentoAPI.salesOrderCreditMemo.list(callback);
 
 // or 
 
-magento.salesOrderCreditMemo.list({
+magentoAPI.salesOrderCreditMemo.list({
   filters: [ val, val, val ]
 }, callback);
 
 // or a single filter
 
-magento.salesOrderCreditMemo.list({
+magentoAPI.salesOrderCreditMemo.list({
   filters: val
 }, callback);
 ```

@@ -5,7 +5,7 @@
 Allows you to retrieve information about product tier prices.
 
 ```js
-magento.catalogProductTierPrice.info({
+magentoAPI.catalogProductTierPrice.info({
   product: val
 }, callback);
 ```
@@ -17,7 +17,7 @@ Allows you to update the product tier prices.
 `tierPrices` is a catalogProductTierPriceEntity object.
 
 ```js
-magento.catalogProductTierPrice.update({
+magentoAPI.catalogProductTierPrice.update({
   product:    val,
   tierPrices: val
 }, callback);

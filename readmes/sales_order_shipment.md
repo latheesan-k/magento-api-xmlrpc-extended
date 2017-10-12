@@ -5,7 +5,7 @@
 Allows you to add a new comment to the order shipment.
 
 ```js
-magento.salesOrderShipment.addComment({
+magentoAPI.salesOrderShipment.addComment({
   shipmentIncrementId:  val,
   comment:              val,  /* optional */
   email:                val,  /* optional */
@@ -18,7 +18,7 @@ magento.salesOrderShipment.addComment({
 Allows you to add a new tracking number to the order shipment.
 
 ```js
-magento.salesOrderShipment.addTrack({
+magentoAPI.salesOrderShipment.addTrack({
   shipmentIncrementId:  val,
   carrier:              val,
   title:                val,
@@ -31,7 +31,7 @@ magento.salesOrderShipment.addTrack({
 Allows you to create a new shipment for an order.
 
 ```js
-magento.salesOrderShipment.create({
+magentoAPI.salesOrderShipment.create({
   orderIncrementId: val,
   itemsQty:         val,  /* optional */
   comment:          val,  /* optional */
@@ -45,7 +45,7 @@ magento.salesOrderShipment.create({
 Allows you to retrieve the list of allowed carriers for an order.
 
 ```js
-magento.salesOrderShipment.getCarriers({
+magentoAPI.salesOrderShipment.getCarriers({
   orderIncrementId: val
 }, callback);
 ```
@@ -55,7 +55,7 @@ magento.salesOrderShipment.getCarriers({
 Allows you to retrieve the shipment information.
 
 ```js
-magento.salesOrderShipment.info({
+magentoAPI.salesOrderShipment.info({
   shipmentIncrementId: val
 }, callback);
 ```
@@ -65,17 +65,17 @@ magento.salesOrderShipment.info({
 Allows you to retrieve the list of order shipments. Additional filters can be applied.
 
 ```js
-magento.salesOrderShipment.list(callback);
+magentoAPI.salesOrderShipment.list(callback);
 
 // or 
 
-magento.salesOrderShipment.list({
+magentoAPI.salesOrderShipment.list({
   filters: [ val, val, val ]
 }, callback);
 
 // or a single filter
 
-magento.salesOrderShipment.list({
+magentoAPI.salesOrderShipment.list({
   filters: val
 }, callback);
 ```
@@ -85,7 +85,7 @@ magento.salesOrderShipment.list({
 Allows you to remove a tracking number from the order shipment.
 
 ```js
-magento.salesOrderShipment.removeTrack({
+magentoAPI.salesOrderShipment.removeTrack({
   shipmentIncrementId:  val,
   trackId:              val
 }, callback);

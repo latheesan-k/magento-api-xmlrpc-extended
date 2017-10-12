@@ -5,7 +5,7 @@
 Allows you to set/get the current store view.
 
 ```js
-magento.catalogCategoryAttribute.currentStore({
+magentoAPI.catalogCategoryAttribute.currentStore({
   storeView: val
 }, callback);
 ```
@@ -15,7 +15,7 @@ magento.catalogCategoryAttribute.currentStore({
 Allows you to retrieve the list of category attributes.
 
 ```js
-magento.catalogCategoryAttribute.list(callback);
+magentoAPI.catalogCategoryAttribute.list(callback);
 ```
 
 ## [options](http://www.magentocommerce.com/api/soap/catalog/catalogCategoryAttributes/catalog_category_attribute.options.html)
@@ -23,7 +23,7 @@ magento.catalogCategoryAttribute.list(callback);
 Allows you to retrieve the attribute options.
 
 ```js
-magento.catalogCategoryAttribute.options({
+magentoAPI.catalogCategoryAttribute.options({
   attributeId:  val,
   storeView:    val
 }, callback);

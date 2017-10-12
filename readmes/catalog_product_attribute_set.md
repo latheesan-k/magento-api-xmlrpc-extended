@@ -5,7 +5,7 @@
 Allows you to add an existing attribute to an attribute set.
 
 ```js
-magento.catalogProductAttributeSet.attributeAdd({
+magentoAPI.catalogProductAttributeSet.attributeAdd({
   attributeId:      val,
   attributeSetId:   val,
   attributeGroupId: val,  /* optional */
@@ -18,7 +18,7 @@ magento.catalogProductAttributeSet.attributeAdd({
 Allows you to remove an existing attribute from an attribute set.
 
 ```js
-magento.catalogProductAttributeSet.attributeRemove({
+magentoAPI.catalogProductAttributeSet.attributeRemove({
   attributeId:    val,
   attributeSetId: val
 }, callback);
@@ -29,7 +29,7 @@ magento.catalogProductAttributeSet.attributeRemove({
 Allows you to create a new attribute set based on another attribute set.
 
 ```js
-magento.catalogProductAttributeSet.create({
+magentoAPI.catalogProductAttributeSet.create({
   attributeSetName: val,
   skeletonSetId:    val
 }, callback);
@@ -40,7 +40,7 @@ magento.catalogProductAttributeSet.create({
 Allows you to add a new group for attributes to the attribute set.
 
 ```js
-magento.catalogProductAttributeSet.groupAdd({
+magentoAPI.catalogProductAttributeSet.groupAdd({
   attributeSetId: val,
   groupName:      val
 }, callback);
@@ -51,7 +51,7 @@ magento.catalogProductAttributeSet.groupAdd({
 Allows you to remove a group from an attribute set.
 
 ```js
-magento.catalogProductAttributeSet.groupRemove({
+magentoAPI.catalogProductAttributeSet.groupRemove({
   attributeGroupId: val
 }, callback);
 ```
@@ -61,7 +61,7 @@ magento.catalogProductAttributeSet.groupRemove({
 Allows you to rename a group in the attribute set.
 
 ```js
-magento.catalogProductAttributeSet.groupRename({
+magentoAPI.catalogProductAttributeSet.groupRename({
   groupId:    val,
   groupName:  val
 }, callback);
@@ -72,7 +72,7 @@ magento.catalogProductAttributeSet.groupRename({
 Allows you to retrieve the list of product attribute sets.
 
 ```js
-magento.catalogProductAttributeSet.list(callback);
+magentoAPI.catalogProductAttributeSet.list(callback);
 ```
 
 ## [remove](http://www.magentocommerce.com/api/soap/catalog/catalogProductAttributeSet/product_attribute_set.remove.html)
@@ -80,7 +80,7 @@ magento.catalogProductAttributeSet.list(callback);
 Allows you to remove an existing attribute set.
 
 ```js
-magento.catalogProductAttributeSet.remove({
+magentoAPI.catalogProductAttributeSet.remove({
   attributeSetId:       val,
   forceProductsRemove:  val   /* optional */
 }, callback);

@@ -7,7 +7,7 @@ Allows you to assign a product link (related, cross-sell, up-sell, or grouped) t
 `data` is a catalogProductLinkEntity object.
 
 ```js
-magento.catalogProductLink.assign({
+magentoAPI.catalogProductLink.assign({
   type:           val,
   product:        val,
   linkedProduct:  val,
@@ -20,7 +20,7 @@ magento.catalogProductLink.assign({
 Allows you to retrieve the product link type attributes.
 
 ```js
-magento.catalogProductLink.attributes({
+magentoAPI.catalogProductLink.attributes({
   type: val
 }, callback);
 ```
@@ -30,7 +30,7 @@ magento.catalogProductLink.attributes({
 Allows you to retrieve the list of linked products for a specific product.
 
 ```js
-magento.catalogProductLink.list({
+magentoAPI.catalogProductLink.list({
   type:     val,
   product:  val
 }, callback);
@@ -41,7 +41,7 @@ magento.catalogProductLink.list({
 Allows you to remove the product link from a specific product.
 
 ```js
-magento.catalogProductLink.remove({
+magentoAPI.catalogProductLink.remove({
   type:           val,
   product:        val,
   linkedProduct:  val
@@ -53,7 +53,7 @@ magento.catalogProductLink.remove({
 Allows you to retrieve the list of product link types.
 
 ```js
-magento.catalogProductLink.types(callback);
+magentoAPI.catalogProductLink.types(callback);
 ```
 
 ## [update](http://www.magentocommerce.com/api/soap/catalog/catalogProductLink/catalog_product_link.update.html)
@@ -63,7 +63,7 @@ Allows you to update the product link.
 `data` is a catalogProductLinkEntity object.
 
 ```js
-magento.catalogProductLink.update({
+magentoAPI.catalogProductLink.update({
   type:           val,
   product:        val,
   linkedProduct:  val,

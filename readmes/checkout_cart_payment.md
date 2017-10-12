@@ -5,7 +5,7 @@
 Allows you to retrieve a list of available payment methods for a shopping cart (quote).
 
 ```js
-magento.checkoutCartPayment.list({
+magentoAPI.checkoutCartPayment.list({
   quoteId:    val,
   storeView:  val  /* optional */
 }, callback);
@@ -18,7 +18,7 @@ Allows you to set a payment method for a shopping cart (quote).
 `data` is an array of shoppingCartPaymentMethodEntity objects.
 
 ```js
-magento.checkoutCartPayment.method({
+magentoAPI.checkoutCartPayment.method({
   quoteId:      val,
   paymentData:  [ val, val, val ],
   storeView:    val  /* optional */
@@ -26,7 +26,7 @@ magento.checkoutCartPayment.method({
 
 // or a single cell of payment data
 
-magento.checkoutCartPayment.method({
+magentoAPI.checkoutCartPayment.method({
   quoteId:      val,
   paymentData:  val,
   storeView:    val  /* optional */

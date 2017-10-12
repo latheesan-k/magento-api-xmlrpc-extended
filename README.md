@@ -2,7 +2,7 @@
 
 Forked from https://www.npmjs.com/package/magento-api-xmlrpc
 
-This wrapper lets you talk to Magento v1.0 via XMLRPC. This is the most reliable and up to date magento wrapper, with lots of bug fixes.
+This wrapper lets you talk to Magento v1.x via XMLRPC. This is the most reliable and up to date magento wrapper, with lots of bug fixes and extended support for Ebizmart SagePay api end-points.
 
 Original wrapper: bitbucket.org/icecom/magentoapi , developed by https://www.npmjs.com/~icecom and https://www.npmjs.com/~2ps. 
 

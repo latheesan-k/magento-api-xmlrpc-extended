@@ -7,7 +7,7 @@ Allows you to set the customer addresses in the shopping cart (quote).
 `customerAddressData` is an array of shoppingCartCustomerAddressEntity objects.
 
 ```js
-magento.checkoutCartCustomer.addresses({
+magentoAPI.checkoutCartCustomer.addresses({
   quoteId:              val,
   customerAddressData:  [ val, val, val ],
   storeView:            val  /* optional */
@@ -15,7 +15,7 @@ magento.checkoutCartCustomer.addresses({
 
 // or a single address
 
-magento.checkoutCartCustomer.addresses({
+magentoAPI.checkoutCartCustomer.addresses({
   quoteId:              val,
   customerAddressData:  val,
   storeView:            val  /* optional */
@@ -29,7 +29,7 @@ Allows you to add information about the customer to a shopping cart (quote).
 `customerAddressData` is an array of shoppingCartCustomerEntity objects.
 
 ```js
-magento.checkoutCartCustomer.set({
+magentoAPI.checkoutCartCustomer.set({
   quoteId:      val,
   customerData: [ val, val, val ],
   storeView:    val  /* optional */
@@ -37,7 +37,7 @@ magento.checkoutCartCustomer.set({
 
 // or a single cell of data
 
-magento.checkoutCartCustomer.set({
+magentoAPI.checkoutCartCustomer.set({
   quoteId:      val,
   customerData: val,
   storeView:    val  /* optional */

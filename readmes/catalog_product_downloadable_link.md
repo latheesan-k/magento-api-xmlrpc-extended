@@ -7,7 +7,7 @@ Allows you to add a new link to a downloadable product.
 `resource` is a catalogProductDownloadableLinkAddEntity object.
 
 ```js
-magento.catalogProductDownloadableLink.add({
+magentoAPI.catalogProductDownloadableLink.add({
   productId:    val,
   resource:     val,
   resourceType: val
@@ -20,7 +20,7 @@ magento.catalogProductDownloadableLink.add({
 Allows you to retrieve a list of links of a downloadable product.
 
 ```js
-magento.catalogProductDownloadableLink.list({
+magentoAPI.catalogProductDownloadableLink.list({
   productId:  val,
   storeView:  val   /* optional */
 }, callback);
@@ -31,7 +31,7 @@ magento.catalogProductDownloadableLink.list({
 Allows you to remove a link/sample from a downloadable product.
 
 ```js
-magento.catalogProductDownloadableLink.remove({
+magentoAPI.catalogProductDownloadableLink.remove({
   linkId: val
 }, callback);
 ```

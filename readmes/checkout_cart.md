@@ -5,11 +5,11 @@
 Allows you to create an empty shopping cart.
 
 ```js
-magento.checkoutCart.create(callback);
+magentoAPI.checkoutCart.create(callback);
 
 // or
 
-magento.checkoutCart.create({
+magentoAPI.checkoutCart.create({
   storeView: val
 }, callback);
 ```
@@ -19,7 +19,7 @@ magento.checkoutCart.create({
 Allows you to retrieve full information about the shopping cart (quote).
 
 ```js
-magento.checkoutCart.info({
+magentoAPI.checkoutCart.info({
   quoteId:    val,
   storeView:  val   /* optional */
 }, callback);
@@ -30,7 +30,7 @@ magento.checkoutCart.info({
 Allows you to retrieve the website license agreement for the quote according to the website (store).
 
 ```js
-magento.checkoutCart.license({
+magentoAPI.checkoutCart.license({
   quoteId:    val,
   storeView:  val   /* optional */
 }, callback);
@@ -43,7 +43,7 @@ Allows you to create an order from a shopping cart (quote).
 Before placing the order, you need to add the customer, customer address, shipping and payment methods.
 
 ```js
-magento.checkoutCart.order({
+magentoAPI.checkoutCart.order({
   quoteId:    val,
   storeView:  val,  /* optional */
   agreements: val   /* optional */
@@ -55,7 +55,7 @@ magento.checkoutCart.order({
 Allows you to retrieve total prices for a shopping cart (quote).
 
 ```js
-magento.checkoutCart.totals({
+magentoAPI.checkoutCart.totals({
   quoteId:    val,
   storeView:  val   /* optional */
 }, callback);

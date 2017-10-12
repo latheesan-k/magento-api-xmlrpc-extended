@@ -7,7 +7,7 @@ Allows you to add one or more tags to a product.
 `data` is a catalogProductTagAddEntity object
 
 ```js
-magento.catalogProductTag.add({
+magentoAPI.catalogProductTag.add({
   data: val
 }, callback);
 ```
@@ -17,7 +17,7 @@ magento.catalogProductTag.add({
 Allows you to retrieve information about the required product tag.
 
 ```js
-magento.catalogProductTag.info({
+magentoAPI.catalogProductTag.info({
   tagId:      val,
   storeView:  val
 }, callback);
@@ -28,7 +28,7 @@ magento.catalogProductTag.info({
 Allows you to retrieve the list of tags for a specific product.
 
 ```js
-magento.catalogProductTag.list({
+magentoAPI.catalogProductTag.list({
   productId:  val,
   storeView:  val
 }, callback);
@@ -39,7 +39,7 @@ magento.catalogProductTag.list({
 Allows you to remove an existing product tag.
 
 ```js
-magento.catalogProductTag.remove({
+magentoAPI.catalogProductTag.remove({
   tagId: val
 }, callback);
 ```
@@ -51,7 +51,7 @@ Allows you to update information about an existing product tag.
 `data` is a catalogProductTagUpdateEntity object.
 
 ```js
-magento.catalogProductTag.update({
+magentoAPI.catalogProductTag.update({
   tagId:      val,
   data:       val,
   storeView:  val   /* optional */

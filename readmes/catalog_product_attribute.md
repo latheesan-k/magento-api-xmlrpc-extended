@@ -7,7 +7,7 @@ Allows you to add a new option for attributes with selectable fields.
 `data` is a catalogProductAttributeOptionEntityToAdd object.
 
 ```js
-magento.catalogProductAttribute.addOption({
+magentoAPI.catalogProductAttribute.addOption({
   attribute:  val,
   data:       val
 }, callback);
@@ -20,7 +20,7 @@ Allows you to create a new product attribute.
 `data` is a catalogProductAttributeEntityToCreate object.
 
 ```js
-magento.catalogProductAttribute.create({
+magentoAPI.catalogProductAttribute.create({
   data: val
 }, callback);
 ```
@@ -30,11 +30,11 @@ magento.catalogProductAttribute.create({
 Allows you to set/get the current store view.
     
 ```js
-magento.catalogProductAttribute.currentStore(callback);
+magentoAPI.catalogProductAttribute.currentStore(callback);
 
 // or
 
-magento.catalogProductAttribute.currentStore({
+magentoAPI.catalogProductAttribute.currentStore({
   storeView: val
 }, callback);
 ```
@@ -44,7 +44,7 @@ magento.catalogProductAttribute.currentStore({
 Allows you to get full information about a required attribute with the list of options.
 
 ```js
-magento.catalogProductAttribute.info({
+magentoAPI.catalogProductAttribute.info({
   attribute: val
 }, callback);
 ```
@@ -54,7 +54,7 @@ magento.catalogProductAttribute.info({
 Allows you to retrieve the list of product attributes.
 
 ```js
-magento.catalogProductAttribute.list({
+magentoAPI.catalogProductAttribute.list({
   setId: val
 }, callback);
 ```
@@ -64,7 +64,7 @@ magento.catalogProductAttribute.list({
 Allows you to retrieve the product attribute options.
 
 ```js
-magento.catalogProductAttribute.options({
+magentoAPI.catalogProductAttribute.options({
   attributeId:  val,
   storeView:    val   /* optional */
 }, callback);
@@ -74,7 +74,7 @@ magento.catalogProductAttribute.options({
 
 Allows you to remove the required attribute from a product.
 
-    magento.catalogProductAttribute.remove({
+    magentoAPI.catalogProductAttribute.remove({
       attribute: val
     }, callback);
 
@@ -83,7 +83,7 @@ Allows you to remove the required attribute from a product.
 Allows you to remove the option for an attribute.
 
 ```js
-magento.catalogProductAttribute.removeOption({
+magentoAPI.catalogProductAttribute.removeOption({
   attribute:  val,
   optionId:   val
 }, callback);
@@ -94,7 +94,7 @@ magento.catalogProductAttribute.removeOption({
 Allows you to retrieve the list of possible attribute types.
 
 ```js
-magento.catalogProductAttribute.types(callback);
+magentoAPI.catalogProductAttribute.types(callback);
 ```
 
 ## [update](http://www.magentocommerce.com/api/soap/catalog/catalogProductAttribute/product_attribute.update.html)
@@ -104,7 +104,7 @@ Allows you to update the required attribute.
 `data` is a catalogProductAttributeEntityToUpdate object.
 
 ```js
-magento.catalogProductAttribute.update({
+magentoAPI.catalogProductAttribute.update({
   attribute:  val,
   data:       val
 }, callback);

@@ -5,7 +5,7 @@
 Allows you to add a new comment to the order invoice.
 
 ```js
-magento.salesOrderInvoice.addComment({
+magentoAPI.salesOrderInvoice.addComment({
   invoiceIncrementId: val,
   comment:            val,  /* optional */
   email:              val,  /* optional */
@@ -20,7 +20,7 @@ Note that not all order invoices can be canceled.
 Only some payment methods support canceling the order invoice (e.g., Google Checkout, PayPal Pro, PayPal Express Checkout).
 
 ```js
-magento.salesOrderInvoice.cancel({
+magentoAPI.salesOrderInvoice.cancel({
   invoiceIncrementId: val
 }, callback);
 ```
@@ -32,7 +32,7 @@ Note that not all order invoices can be captured.
 Only some payment methods support capturing the order invoice (e.g., PayPal Pro).
 
 ```js
-magento.salesOrderInvoice.capture({
+magentoAPI.salesOrderInvoice.capture({
   invoiceIncrementId: val
 }, callback);
 ```
@@ -42,7 +42,7 @@ magento.salesOrderInvoice.capture({
 Allows you to create a new invoice for an order.
 
 ```js
-magento.salesOrderInvoice.create({
+magentoAPI.salesOrderInvoice.create({
   orderIncrementId: val,
   itemsQty:         val,
   comment:          val,  /* optional */
@@ -56,7 +56,7 @@ magento.salesOrderInvoice.create({
 Allows you to retrieve information about the required invoice.
 
 ```js
-magento.salesOrderInvoice.info({
+magentoAPI.salesOrderInvoice.info({
   invoiceIncrementId: val
 }, callback);
 ```
@@ -66,17 +66,17 @@ magento.salesOrderInvoice.info({
 Allows you to retrieve the list of order invoices. Additional filters can also be applied.
 
 ```js
-magento.salesOrderInvoice.list(callback);
+magentoAPI.salesOrderInvoice.list(callback);
 
 // or 
 
-magento.salesOrderInvoice.list({
+magentoAPI.salesOrderInvoice.list({
   filters: [ val, val, val ]
 }, callback);
 
 // or a single filter
 
-magento.salesOrderInvoice.list({
+magentoAPI.salesOrderInvoice.list({
   filters: val
 }, callback);
 ```

@@ -5,5 +5,5 @@
 Retrieve the list of customer groups.
 
 ```js
-magento.customerGroup.list(callback);
+magentoAPI.customerGroup.list(callback);
 ```

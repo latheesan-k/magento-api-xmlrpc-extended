@@ -7,7 +7,7 @@ Allows you to create a new product and return ID of the created product.
 `data` is a catalogProductCreateEntity object.
 
 ```js
-magento.catalogProduct.create({
+magentoAPI.catalogProduct.create({
   type: val,
   set:  val,
   sku:  val,
@@ -20,11 +20,11 @@ magento.catalogProduct.create({
 Allows you to set/get the current store view.
 
 ```js
-magento.catalogProduct.currentStore(callback);
+magentoAPI.catalogProduct.currentStore(callback);
 
 // or
 
-magento.catalogProduct.currentStore({
+magentoAPI.catalogProduct.currentStore({
   view: val   /* optional */
 }, callback);
 ```
@@ -34,7 +34,7 @@ magento.catalogProduct.currentStore({
 Allows you to delete the required product.
 
 ```js
-magento.catalogProduct.delete({
+magentoAPI.catalogProduct.delete({
   id: val
 }, callback);
 ```
@@ -44,7 +44,7 @@ magento.catalogProduct.delete({
 Allows you to get the product special price data.
 
 ```js
-magento.catalogProduct.getSpecialPrice({
+magentoAPI.catalogProduct.getSpecialPrice({
   id: val
 }, callback);
 ```
@@ -54,7 +54,7 @@ magento.catalogProduct.getSpecialPrice({
 Allows you to retrieve information about the required product.
 
 ```js
-magento.catalogProduct.info({
+magentoAPI.catalogProduct.info({
   id: val,
   view: val   /* optional */
 }, callback);
@@ -65,12 +65,12 @@ magento.catalogProduct.info({
 Allows you to retrieve the list of products.
 
 ```js
-magento.catalogProduct.list(callback);
+magentoAPI.catalogProduct.list(callback);
 ```
 //or
 
 ```js
-magento.catalogProduct.listOfAdditionalAttributes({
+magentoAPI.catalogProduct.listOfAdditionalAttributes({
   filters:       val /* optional */
 }, callback);
 ```
@@ -92,7 +92,7 @@ Get the list of additional attributes.
 Additional attributes are attributes that are not in the default set of attributes.
 
 ```js
-magento.catalogProduct.listOfAdditionalAttributes({
+magentoAPI.catalogProduct.listOfAdditionalAttributes({
   prodType:       val,
   attributeSetId: val
 }, callback);
@@ -105,7 +105,7 @@ Allows you to set the product special price.
 `from` and `to` should be native JavaScript date objects.
 
 ```js
-magento.catalogProduct.setSpecialPrice({
+magentoAPI.catalogProduct.setSpecialPrice({
   id:           val,
   specialPrice: val,
   from:         val,
@@ -121,7 +121,7 @@ Allows you to update the required product. Note that you should specify only tho
 `data` is a catalogProductCreateEntity object.
 
 ```js
-magento.catalogProduct.update({
+magentoAPI.catalogProduct.update({
   id:         val,
   data:       val,
   storeView:  val    /* optional */

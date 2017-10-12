@@ -7,7 +7,7 @@ Allows you to add a new custom option for a product.
 `data` is a catalogProductCustomOptionToAdd object.
 
 ```js
-magento.catalogProductCustomOption.add({
+magentoAPI.catalogProductCustomOption.add({
   productId:  val,
   data:       val,
   storeView:  val   /* optional */
@@ -19,7 +19,7 @@ magento.catalogProductCustomOption.add({
 Allows you to retrieve full information about the custom option in a product.
 
 ```js
-magento.catalogProductCustomOption.info({
+magentoAPI.catalogProductCustomOption.info({
   optionId:   val,
   storeView:  val   /* optional */
 }, callback);
@@ -30,7 +30,7 @@ magento.catalogProductCustomOption.info({
 Allows you to retrieve the list of custom options for a specific product.
 
 ```js
-magento.catalogProductCustomOption.list({
+magentoAPI.catalogProductCustomOption.list({
   productId:  val,
   storeView:  val   /* optional */
 }, callback);
@@ -41,7 +41,7 @@ magento.catalogProductCustomOption.list({
 Allows you to remove a custom option from the product.
 
 ```js
-magento.catalogProductCustomOption.remove({
+magentoAPI.catalogProductCustomOption.remove({
   optionId: val
 }, callback);
 ```
@@ -51,7 +51,7 @@ magento.catalogProductCustomOption.remove({
 Allows you to retrieve the list of available custom option types.
 
 ```js
-magento.catalogProductCustomOption.types(callback);
+magentoAPI.catalogProductCustomOption.types(callback);
 ```
 
 ## [update](http://www.magentocommerce.com/api/soap/catalog/catalogProductCustomOption/product_custom_option.update.html)
@@ -61,7 +61,7 @@ Allows you to update the required product custom option.
 `data` is a catalogProductCustomOptionToUpdate object.
 
 ```js
-magento.catalogProductCustomOption.update({
+magentoAPI.catalogProductCustomOption.update({
   optionId:   val,
   data:       val,
   storeView:  val   /* optional */

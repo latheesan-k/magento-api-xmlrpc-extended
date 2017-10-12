@@ -9,7 +9,7 @@ Note that the custom option value can be added only to the option with the Selec
 `data` is a catalogProductCustomOptionValueAdd object.
 
 ```js
-magento.catalogProductCustomOptionValue.add({
+magentoAPI.catalogProductCustomOptionValue.add({
   optionId:   val,
   data:       val,
   storeView:  val   /* optional */
@@ -21,7 +21,7 @@ magento.catalogProductCustomOptionValue.add({
 Allows you to retrieve full information about the specified product custom option value.
 
 ```js
-magento.catalogProductCustomOptionValue.info({
+magentoAPI.catalogProductCustomOptionValue.info({
   valueId:    val,
   storeView:  val   /* optional */
 }, callback);
@@ -34,7 +34,7 @@ Allows you to retrieve the list of product custom option values.
 Note that the method is available only for the option Select Input Type.
 
 ```js
-magento.catalogProductCustomOptionValue.list({
+magentoAPI.catalogProductCustomOptionValue.list({
   optionId:   val,
   storeView:  val   /* optional */
 }, callback);
@@ -45,7 +45,7 @@ magento.catalogProductCustomOptionValue.list({
 Allows you to remove the custom option value from a product.
 
 ```js
-magento.catalogProductCustomOptionValue.remove({
+magentoAPI.catalogProductCustomOptionValue.remove({
   valueId: val
 }, callback);
 ```
@@ -57,7 +57,7 @@ Allows you to update the product custom option value.
 `data` is a catalogProductCustomOptionValueUpdateEntity object.
 
 ```js
-magento.catalogProductCustomOptionValue.update({
+magentoAPI.catalogProductCustomOptionValue.update({
   valueId:    val,
   data:       val,
   storeView:  val   /* optional */

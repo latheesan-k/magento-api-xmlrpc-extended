@@ -7,13 +7,13 @@ Create a new customer.
 `customerData` is an array of customerCustomerEntityToCreate objects.
 
 ```js
-magento.customer.create({
+magentoAPI.customer.create({
   customerData: [ val, val, val ]
 }, callback);
 
 // or a single cell of customer data
 
-magento.customer.create({
+magentoAPI.customer.create({
   customerData: val
 }, callback);
 ```
@@ -23,7 +23,7 @@ magento.customer.create({
 Delete the required customer.
 
 ```js
-magento.customer.delete({
+magentoAPI.customer.delete({
   customerId: val
 }, callback);
 ```
@@ -33,14 +33,14 @@ magento.customer.delete({
 Retrieve information about the specified customer.
 
 ```js
-magento.customer.info({
+magentoAPI.customer.info({
   customerId: val,
   attributes: [ val, val, val ]   /* optional */
 }, callback);
 
 // or a single attribute
 
-magento.customer.info({
+magentoAPI.customer.info({
   customerId: val,
   attributes: val   /* optional */
 }, callback);
@@ -51,13 +51,13 @@ magento.customer.info({
 Allows you to retrieve the list of customers.
 
 ```js
-magento.customer.list({
+magentoAPI.customer.list({
   filters: [ val, val, val ]
 }, callback);
 
 // or a single attribute
 
-magento.customer.list({
+magentoAPI.customer.list({
   filters: val
 }, callback);
 ```
@@ -71,14 +71,14 @@ Note that you need to pass only those arguments which you want to be updated.
 `customerData` is an array of customerCustomerEntityToCreate objects.
 
 ```js
-magento.customer.update({
+magentoAPI.customer.update({
   customerId:   val,
   customerData: [ val, val, val ]
 }, callback);
 
 // or a single attribute
 
-magento.customer.update({
+magentoAPI.customer.update({
   customerId:   val,
   customerData: val
 }, callback);

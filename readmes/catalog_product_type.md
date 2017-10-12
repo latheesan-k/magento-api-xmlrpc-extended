@@ -5,5 +5,5 @@
 Allows you to retrieve the list of product types.
 
 ```js
-magento.catalogProductType.list(callback);
+magentoAPI.catalogProductType.list(callback);
 ```

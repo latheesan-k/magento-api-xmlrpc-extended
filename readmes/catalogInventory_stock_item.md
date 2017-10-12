@@ -5,13 +5,13 @@
 Allows you to retrieve the list of stock data by product IDs.
 
 ```js
-magento.catalogInventoryStockItem.list({
+magentoAPI.catalogInventoryStockItem.list({
   products: [ val, val, val ]
 }, callback);
 
 // or a single product
 
-magento.catalogInventoryStockItem.list({
+magentoAPI.catalogInventoryStockItem.list({
   products: val
 }, callback);
 ```
@@ -23,7 +23,7 @@ Allows you to update the required product stock data.
 `data` is a catalogInventoryStockItemUpdateEntity object.
 
 ```js
-magento.catalogInventoryStockItem.update({
+magentoAPI.catalogInventoryStockItem.update({
   product: val,
   data: val
 }, callback);

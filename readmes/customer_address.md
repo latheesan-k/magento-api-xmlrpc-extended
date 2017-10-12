@@ -7,14 +7,14 @@ Create a new address for the customer.
 `addressData` is an array of customerAddressEntityCreate objects.
 
 ```js
-magento.customerAddress.create({
+magentoAPI.customerAddress.create({
   customerId:   val,
   addressData:  [ val, val, val ]
 }, callback);
 
 // or a single cell of address data
 
-magento.customerAddress.create({
+magentoAPI.customerAddress.create({
   customerId:   val,
   addressData:  val
 }, callback);
@@ -25,7 +25,7 @@ magento.customerAddress.create({
 Delete the required customer address.
 
 ```js
-magento.customerAddress.delete({
+magentoAPI.customerAddress.delete({
   addressId: val
 }, callback);
 ```
@@ -35,7 +35,7 @@ magento.customerAddress.delete({
 Retrieve information about the required customer address.
 
 ```js
-magento.customerAddress.info({
+magentoAPI.customerAddress.info({
   addressId: val
 }, callback);
 ```
@@ -45,7 +45,7 @@ magento.customerAddress.info({
 Retrieve the list of customer addresses.
 
 ```js
-magento.customerAddress.list({
+magentoAPI.customerAddress.list({
   customerId: val
 }, callback);
 ```
@@ -57,14 +57,14 @@ Update address data of the required customer.
 `addressData` is an array of customerAddressEntityCreate objects.
 
 ```js
-magento.customerAddress.update({
+magentoAPI.customerAddress.update({
   addressId:    val,
   addressData:  [ val, val, val ]
 }, callback);
 
 // or a single cell of address data
 
-magento.customerAddress.update({
+magentoAPI.customerAddress.update({
   addressId:    val,
   addressData:  val
 }, callback);

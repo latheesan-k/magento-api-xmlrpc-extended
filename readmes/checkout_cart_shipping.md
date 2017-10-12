@@ -5,7 +5,7 @@
 Allows you to retrieve the list of available shipping methods for a shopping cart (quote).
 
 ```js
-magento.checkoutCartShipping.list({
+magentoAPI.checkoutCartShipping.list({
   quoteId:    val,
   storeView:  val  /* optional */
 }, callback);
@@ -16,7 +16,7 @@ magento.checkoutCartShipping.list({
 Allows you to set a shipping method for a shopping cart (quote).
 
 ```js
-magento.checkoutCartShipping.method({
+magentoAPI.checkoutCartShipping.method({
   quoteId:        val,
   shippingMethod: val,
   storeView:      val  /* optional */

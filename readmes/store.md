@@ -5,11 +5,11 @@
 Allows you to retrieve information about the required store view.
 
 ```js
-magento.store.info(callback);
+magentoAPI.store.info(callback);
 
 // or
 
-magento.store.info({
+magentoAPI.store.info({
   storeView: val
 }, callback);
 ```
@@ -19,5 +19,5 @@ magento.store.info({
 Allows you to retrieve the list of store views.
 
 ```js
-magento.store.list(callback);
+magentoAPI.store.list(callback);
 ```

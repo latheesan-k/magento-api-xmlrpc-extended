@@ -2,8 +2,8 @@
 
 ## [list](http://www.magentocommerce.com/api/soap/directory/directory_country.list.html)
 
-Retrieve the list of countries from Magento.
+Retrieve the list of countries from magentoAPI.
 
 ```js
-magento.directoryCountry.list(callback);
+magentoAPI.directoryCountry.list(callback);
 ```
