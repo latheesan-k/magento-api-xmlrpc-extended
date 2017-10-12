@@ -2,7 +2,7 @@
 
 Forked from https://www.npmjs.com/package/magento-api-xmlrpc
 
-This wrapper lets you talk to Magento via SOAP. This is the most reliable and up to date magento wrapper, with lots of bug fixes.
+This wrapper lets you talk to Magento v1.0 via XMLRPC. This is the most reliable and up to date magento wrapper, with lots of bug fixes.
 
 Original wrapper: bitbucket.org/icecom/magentoapi , developed by https://www.npmjs.com/~icecom and https://www.npmjs.com/~2ps. 
 
@@ -41,7 +41,7 @@ magentoAPI.login((error, sessionId) =>
 If need be, you can manually change the session id.
 
 ```js
-magento.changeSession(newSessionId);
+magentoAPI.changeSession(newSessionId);
 ```
 
 All of the API methods take an object of params as the first argument, and a callback as the second.
