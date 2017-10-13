@@ -46,7 +46,7 @@ magentoAPI.changeSession(newSessionId);
 
 ---
 
-## SagePay API Usage
+## (Ebizmart) Sage Pay API Usage
 
 *List transactions*
 
@@ -63,7 +63,10 @@ magentoAPI.sagePayTransaction.list((error, transactionList) => {
 *Transaction Info*
 
 ```js
-magentoAPI.sagePayTransaction.info({'vpstxcode': 'EA049E74-A774-4322-80E6-1B317A90C2EB'}, (error, transactionInfo) => {
+let request = { 
+    'vpstxcode': 'EA049E74-A774-4322-80E6-1B317A90C2EB' 
+};
+magentoAPI.sagePayTransaction.info(request, (error, transactionInfo) => {
     if (error) {
         console.log('error', error);
         return;
