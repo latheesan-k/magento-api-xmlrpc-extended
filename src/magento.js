@@ -42,6 +42,7 @@ const resources = {
     store: './resources/store.js',
     uniquecoupons: './resources/uniquecoupons.js',
     webservices: './resources/webservices.js',
+    sagePayTransaction: './resources/sage_pay_transaction.js',
 };
 
 // defaults

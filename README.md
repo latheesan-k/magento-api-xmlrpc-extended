@@ -44,6 +44,36 @@ If need be, you can manually change the session id.
 magentoAPI.changeSession(newSessionId);
 ```
 
+---
+
+## SagePay API Usage
+
+*List transactions*
+
+```js
+magentoAPI.sagePayTransaction.list((error, transactionList) => {
+    if (error) {
+        console.log('error', error);
+        return;
+    }
+    console.log(transactionList);
+});
+```
+
+*Transaction Info*
+
+```js
+magentoAPI.sagePayTransaction.info({'vpstxcode': 'EA049E74-A774-4322-80E6-1B317A90C2EB'}, (error, transactionInfo) => {
+    if (error) {
+        console.log('error', error);
+        return;
+    }
+    console.log(transactionInfo);
+});
+```
+
+---
+
 All of the API methods take an object of params as the first argument, and a callback as the second.
 
 Or, if no params are sent, just a callback as the first argument.
